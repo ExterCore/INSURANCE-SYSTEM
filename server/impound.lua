@@ -1,14 +1,13 @@
-local deleteTimer = 100 --time in Minutes
+local deleteTimer = 180 --time in Minutes
 
 CreateThread(function()
     while true do
-        TriggerClientEvent('ox_lib:notify', -1, { title = 'DVALL SYSTEM', type = 'inform', description = 'All the vehicles will be removed in 30 seconds',  position = 'top' })
-        Wait(15000)
-        TriggerClientEvent('ox_lib:notify', -1, { title = 'DVALL SYSTEM', type = 'inform', description = 'All the vehicles will be removed in 15 seconds',  position = 'top' })
+         Wait(deleteTimer * 60000)
+        TriggerClientEvent('ox_lib:notify', -1, { title = 'DVALL SYSTEM', type = 'inform', description = 'Inactive vehicles will be deleted in 1MIN',  position = 'top' })
+        Wait(45000)
+        TriggerClientEvent('ox_lib:notify', -1, { title = 'DVALL SYSTEM', type = 'inform', description = 'Inactive vehicles will be deleted in 15 SECS',  position = 'top' })
         Wait(10000)
-        TriggerClientEvent('ox_lib:notify', -1, { title = 'DVALL SYSTEM', type = 'inform', description = 'All the vehicles will be removed in 10 seconds',  position = 'top' })
-        Wait(5000)
-        TriggerClientEvent('ox_lib:notify', -1, { title = 'DVALL SYSTEM', type = 'inform', description = 'All the vehicles will be removed in 5 seconds',  position = 'top' })
+        TriggerClientEvent('ox_lib:notify', -1, { title = 'DVALL SYSTEM', type = 'inform', description = 'Inactive vehicles will be deleted in 5 SECS',  position = 'top' })
         Wait(5000)
 
         for i, veh in pairs(GetAllVehicles()) do
@@ -18,7 +17,7 @@ CreateThread(function()
                 end
             end
         end
-        TriggerClientEvent('ox_lib:notify', -1, { title = 'DVALL SYSTEM', type = 'success', description = 'All the vehicles have been removed !',  position = 'top' })
+        TriggerClientEvent('ox_lib:notify', -1, { title = 'DVALL SYSTEM', type = 'success', description = 'All Inactive vehicles got deleted !',  position = 'top' })
     end
 end)
 
