@@ -1,4 +1,9 @@
-# INSURANCE-SYSTEM
+# [FREE] INSURANCE SYSTEM WITH OX_LIB
+
+
+This script functions for those of you who are confused about making your vehicle disappear within a certain time period. or you want to provide a duration or timer for mobile insurance on your server.
+
+This script is standalone you only need the ox library to make it work
 
 
 INSURANCE SYSTEM WITH OX_LIB
