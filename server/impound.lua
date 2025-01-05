@@ -2,7 +2,7 @@ local deleteTimer = 180 --time in Minutes
 
 CreateThread(function()
     while true do
-         Wait(deleteTimer * 60000)
+        Wait(deleteTimer * 60000)
         TriggerClientEvent('ox_lib:notify', -1, { title = 'DVALL SYSTEM', type = 'inform', description = 'Inactive vehicles will be deleted in 1MIN',  position = 'top' })
         Wait(45000)
         TriggerClientEvent('ox_lib:notify', -1, { title = 'DVALL SYSTEM', type = 'inform', description = 'Inactive vehicles will be deleted in 15 SECS',  position = 'top' })
